@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Listing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>$().ready(function() {
+            if(document.referrer != 'http://localhost:3000/addAdmin.html'){ 
+                history.pushState(null, null, 'http://localhost:3000/adminlog.html');
+                window.addEventListener('popstate', function () {
+                    history.pushState(null, null, 'http://localhost:3000/adminlog.html');
+                });
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <section id = 'header'>
+        <div class = "menu-bar">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src=./images/logo.jpg></a>
+            <button class=".navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="logout" class="nav-link" href="">Sign Out</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class ="banner text-center">
+                <h1>Admin Functions</h1>
+                <ul class="view-hotel list-centre">
+                  <li><a href="adminHome.html">Admin Home Page</a></li>
+                  <li><a href="addAdmin.html">Add New Admin</a></li>
+                  <li><a href="addhotel.html">Add New Hotels</a></li>
+                  <li><a href="adminPage.html">View & Update Available Hotels</a></li>
+                </ul>
+            </div>
+
+    <!---------------Creating New Admin------------->  
+    <h3>Add New Admin</h3> 
+    <form id="newAdmin">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+        
+            <label for="username"><b>User Name</b></label>
+            <input type="text" id = "newAdminName" placeholder="Enter Username" name="username" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id = "newAdminPass" placeholder="Enter Password" name="psw" required>
+
+            <div class="clearfix">
+                <a href="./index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+              <button type="submit" id="signupbtn" class="btn btn-primary">Sign Up</button>
+              <script>
+                  function submitForm() {
+                    document.newUser.submit();
+                    document.newUser.reset();
+                  }
+                </script>
+            </div>
+          </div>
+      </form>
+
+    
+  <div id="footer" class="text-center">
+    <p>(c) 2019 Allied Corporation</p>
+  </div>
+  </body>
+  <script src="./js/accept.js"></script>
+</html>

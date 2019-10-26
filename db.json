@@ -1,0 +1,68 @@
+{
+  "HotelListing": [
+    {
+      "name": "Harmony Castle Hotel",
+      "state": "Lagos",
+      "address": "21 Oladimeji Alo, Off Freedom Way Beside Canadian Embassy, Lekki Phase 1",
+      "description": "Hawthorn Suites Abuja is located in the heart of Nigeria's Capital, Hawthorn Suites by Wyndham offers easy access to the commercial district and to Abuja tourist attractions. Set on beautifully landscaped gardens, the hotel offers a wide range of business and leisure facilities   The hotel has spacious and elegant suites at Hawthorn Suites by Wyndham Abuja. All suites feature large windows with city/pool views, comfortable beds, work desks, complimentary WiFi access, marble bathrooms and more. Browse below and book a room or suite on for our best available rates.",
+      "rooms": "40",
+      "amount": "35000",
+      "id": 9
+    },
+    {
+      "name": "De-Gangan Hotel",
+      "state": "Osun",
+      "address": "Ile Ife Plot 222, Abiodun Oresanya Avenue, Marina, Lagos",
+      "description": "De-Gangan Hotel is located in the heart of Nigeria's Capital, Hawthorn Suites by Wyndham offers easy access to the commercial district and to Abuja tourist attractions. Set on beautifully landscaped gardens, the hotel offers a wide range of business and leisure facilities   The hotel has spacious and elegant suites at Hawthorn Suites by Wyndham Abuja. All suites feature large windows with city/pool views, comfortable beds, work desks, complimentary WiFi access, marble bathrooms and more. Browse below and book a room or suite on for our best available rates.",
+      "rooms": "28",
+      "amount": "55000",
+      "id": 11
+    },
+    {
+      "name": "macTee",
+      "state": "Oyo",
+      "address": "Abule Egba Crescent Oke Odo Street",
+      "description": "It is along Ozumba Mbanduwi Avenue. About 5 minutes drive from Lekki Phase I",
+      "rooms": "35",
+      "amount": "50000",
+      "id": 12
+    },
+    {
+      "name": "Five Star Hotel",
+      "state": "Lagos",
+      "address": "Plot 20 Ademola Adetokunbo Avenue, Victoria Island",
+      "description": "It is about 5 minutes drive from Lagos Law School and at the back of Trinity Mall. ",
+      "rooms": "70",
+      "amount": "105000",
+      "id": 13
+    },
+    {
+      "name": "Inland Stream Hotel",
+      "state": "Plateau",
+      "address": "21 Oladimeji Alo, Off Freedom Way Beside Canadian Embassy, Lekki Phase 1",
+      "description": "It is along Ozumba Mbanduwi Avenue. About 5 minutes drive from Lekki Phase I",
+      "rooms": "111",
+      "amount": "111111",
+      "id": 15
+    }
+  ],
+  "accountAdmin": [
+    {
+      "asign": "aaaa",
+      "apass": "1111",
+      "id": 1
+    }
+  ],
+  "accountUsers": [
+    {
+      "username": "teeliny",
+      "password": "347189",
+      "id": 1
+    },
+    {
+      "signup": "aaa",
+      "pass": "111",
+      "id": 2
+    }
+  ]
+}

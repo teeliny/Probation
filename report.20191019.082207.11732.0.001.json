@@ -1,0 +1,383 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191019.082207.11732.0.001.json",
+    "dumpEventTime": "2019-10-19T08:22:07Z",
+    "dumpEventTimeStamp": "1571469727272",
+    "processId": 11732,
+    "cwd": "c:\\Users\\T-Liny\\Documents\\Desktop\\New Project",
+    "commandLine": [
+      "node",
+      "c:\\Users\\T-Liny\\Documents\\Desktop\\Probation lab\\pangram.js"
+    ],
+    "nodejsVersion": "v12.9.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.9.0",
+      "v8": "7.6.303.29-node.15",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.9.0/node-v12.9.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.9.0/node-v12.9.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.9.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17134",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+        "speed": 2394,
+        "user": 3344890,
+        "nice": 0,
+        "sys": 2224281,
+        "idle": 28374890,
+        "irq": 136812
+      },
+      {
+        "model": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+        "speed": 2394,
+        "user": 2903812,
+        "nice": 0,
+        "sys": 1664796,
+        "idle": 29375187,
+        "irq": 79281
+      },
+      {
+        "model": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+        "speed": 2394,
+        "user": 3386343,
+        "nice": 0,
+        "sys": 1858500,
+        "idle": 28698953,
+        "irq": 43484
+      },
+      {
+        "model": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+        "speed": 2394,
+        "user": 3325250,
+        "nice": 0,
+        "sys": 1588593,
+        "idle": 29029937,
+        "irq": 34640
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "WiFi",
+        "internal": false,
+        "mac": "00:24:d7:c3:7f:84",
+        "address": "fe80::c61:a00c:440d:536b",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "WiFi",
+        "internal": false,
+        "mac": "00:24:d7:c3:7f:84",
+        "address": "192.168.43.59",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Taiwo"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff724fc6ed9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff724fcb26c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28172"
+    },
+    {
+      "pc": "0x00007ff724fca218",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23992"
+    },
+    {
+      "pc": "0x00007ff7250b5e5b",
+      "symbol": "v8::base::CPU::has_sse+37691"
+    },
+    {
+      "pc": "0x00007ff7258a899e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff725890941",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff72575ec7c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff72576811f",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1279"
+    },
+    {
+      "pc": "0x00007ff725766604",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff72575c253",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x00007ff72575aaf4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff72577a305",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff7254e8f9d",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+3981"
+    },
+    {
+      "pc": "0x00007ff725cc223d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+575565"
+    },
+    {
+      "pc": "0x0000029d9a98854a",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2160918528,
+    "totalCommittedMemory": 2160918528,
+    "usedMemory": 2152128384,
+    "availableMemory": 42488696,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31432,
+        "available": 230400
+      },
+      "new_space": {
+        "memorySize": 5242880,
+        "committedMemory": 5242880,
+        "capacity": 2618320,
+        "used": 623208,
+        "available": 1995112
+      },
+      "old_space": {
+        "memorySize": 2154409984,
+        "committedMemory": 2154409984,
+        "capacity": 2151818336,
+        "used": 2151070240,
+        "available": 748096
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 210592,
+        "used": 210592,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 528384,
+        "capacity": 189360,
+        "used": 189360,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2618320,
+        "used": 0,
+        "available": 2618320
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 362.468,
+    "kernelCpuSeconds": 35.078,
+    "cpuConsumptionPercent": 110.737,
+    "maxRss": 2256670720,
+    "pageFaults": {
+      "IORequired": 674037,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1,
+      "writes": 4722096
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "": "C:=c:\\Users\\T-Liny\\Documents\\Desktop\\New Project",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "APPDATA": "C:\\Users\\T-Liny\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "asl.log": "Destination=file;OnFirstLog=command,environment,parent",
+    "CLASSPATH": ".;C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip",
+    "CM2014DIR": "C:\\Program Files (x86)\\Common Files\\Autodesk Shared\\Materials\\",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "TAIWO",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "ENVI51_GPTOOLS": "C:\\Program Files\\Exelis\\IDL83",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\T-Liny",
+    "ILBDIR": "C:\\Program Files (x86)\\Common Files\\Autodesk Shared\\Materials\\",
+    "LOCALAPPDATA": "C:\\Users\\T-Liny\\AppData\\Local",
+    "LOGONSERVER": "\\\\TAIWO",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\T-Liny\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\MATLAB\\R2011a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2011a\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\Skype\\Phone\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Users\\T-Liny\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\T-Liny\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PIPE_LOGGING": "true",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 37 Stepping 5, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "2505",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "QTJAVA": "C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\T-Liny\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\T-Liny\\AppData\\Local\\Temp",
+    "USERDOMAIN": "Taiwo",
+    "USERDOMAIN_ROAMINGPROFILE": "Taiwo",
+    "USERNAME": "T-Liny",
+    "USERPROFILE": "C:\\Users\\T-Liny",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_CWD": "C:\\Users\\T-Liny\\Documents\\Desktop\\Decagon\\VSCode-win32-x64-1.38.1",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\b0a1e8f1df24cac89e36b4d3c8c6fd6c-1.38.1-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-72ca9abc-ffda-46d4-b1a1-9ff2cc40c791-sock",
+    "VSCODE_LOGS": "C:\\Users\\T-Liny\\AppData\\Roaming\\Code\\logs\\20191018T221707",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "C:\\Users\\T-Liny\\AppData\\Roaming\\Code\\CachedData\\b37e54c98e1a74ba89e03073e5a3761284e3ffb0",
+    "VSCODE_PID": "1808",
+    "VSCODE_PREVENT_FOREIGN_INSPECT": "true",
+    "WALLABY_PRODUCTION": "true",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll"
+  ]
+}

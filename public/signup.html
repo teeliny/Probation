@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Listing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <section id = 'header'>
+        <div class = "menu-bar">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src=./images/logo.jpg></a>
+            <button class=".navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signin.html">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    <!---------------Sign up form------------->   
+    <form id="newUser">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+        
+            <label for="username"><b>User Name</b></label>
+            <input type="text" id = "newName" placeholder="Enter Username" name="username" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id = "newPass" placeholder="Enter Password" name="psw" required>
+        
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" id = "newPassword" placeholder="Repeat Password" name="psw-repeat" required>
+        
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+        
+            
+        
+            <div class="clearfix">
+                <a href="./index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+              <button type="submit" id="signupbtn" class="btn btn-primary">Sign Up</button>
+              <script>
+                  function submitForm() {
+                    document.newUser.submit();
+                    document.newUser.reset();
+                  }
+                </script>
+            </div>
+          </div>
+      </form>
+      
+    <!---------------Top Hotels------------->
+
+    <section id="hotels">
+      <div class="container">
+        <h3>TOP HOTELS IN NIGERIA</h3>
+        <div class="hotel-details">
+        <div class="hotel-update">
+          <h4><b>Davok Suites</b></h4>
+          <p>Akwa Ibom State</p>
+          <i class="fa fa-font"></i><span>Name</span><br>
+          <i class="fa fa-address-card"></i><span>address</span><br>
+          <i class="fa fa-map-marker"></i><span>State</span><br>
+          <i class="fa fa-angle-double-right"></i><span>Description</span><br>
+          <i class="fa fa-angle-double-right"></i><span>No of Rooms</span><br>
+          <i class="fa fa-angle-double-right"></i><span>Amount per Night</span><br>
+          <a href="viewmore">View More</a>
+        </div>
+        <div class = "book-btn">
+          <button type="button" class="btn btn-primary">Book Now!</button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  <div id="footer" class="text-center">
+    <p>(c) 2019 Allied Corporation</p>
+  </div>
+  </body>
+  <script src="./js/accept.js"></script>
+</html>

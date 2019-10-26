@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.menu-bar
+{
+  background-image: linear-gradient(to right, #6db9ef, #7ce08a);
+}
+.nav-link
+{
+  font-size: 16px;
+  color: #fff !important;
+  margin: 2px;
+}
+.navbar-nav
+{
+  text-align: right;
+}
+#navbarNav ul li 
+{
+  background: rgb(197, 238, 240);
+}
+#navbarNav ul li:hover
+{
+  opacity: 0.6;
+}
+img 
+{
+  vertical-align: middle;
+  border-style: none;
+  height: 80px;
+}
+.menu-bar .navbar-toggler
+{
+  padding-right: 50px;
+  outline: none;
+  border: none;
+}
+.banner
+{
+  height: 80vh;
+  background-image: linear-
+  gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),url(images/banner2.jpg));
+  background-size: cover;
+  background-position: center;
+  color: #f0f; 
+}
+.banner h1
+{
+  padding-top: 170px;
+  font-size: 50px;
+  letter-spacing: 6px;
+  font-weight: 600;
+  text-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.search
+{
+  padding: 30px 0;
+  margin: -50px 6% 50px;
+  background-image: linear-gradient(to right, #6db9ef, #7ce08a);
+}
+.search .form-control
+{
+  max-width: 100px;
+  display: inline-flex;
+  margin: 10px 5px;
+  border-radius: 0;
+  box-shadow: none !important;
+  border: none !important;
+}
+.search #sub-btn
+{
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: inline-flex;
+  margin: 10px 5px;
+  padding: 5px 20px;
+  background-color: #00f;
+  color:#f0f
+}
+/*------------ Top Hotels----------*/
+#hotels
+{
+  background: #8484e6;
+  padding: 20px 20px;
+}
+#hotels h3
+{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.h3, h3 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+.hotel-details
+{
+  box-shadow: 0 2px 70px 0 rgba(110,130,208,-18);
+  border-radius: 5px;
+  margin-bottom: 20px;
+} 
+.hotel-update
+{
+  background: #fff;
+  padding: 20px 20px;
+  border-radius:5px;
+}
+.hotel-update .fa
+{
+  margin-top: 5px;
+  margin-right: 10px;
+  color: #77d1b1;
+}
+.hotel-update a
+{
+  text-decoration: none !important;
+  color: #b6bed2;
+  float: right; 
+  margin-bottom: 0 !important;
+}
+.book-btn
+{
+  height: 40px;
+  background-image: linear-gradient(to right, #6db9ef, #7ce08a);
+  padding: 7px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.book-btn .btn-primary
+{
+   padding: 0 30px;
+   float: right;
+   border-radius: 0;
+   box-shadow: none !important;
+   background: transparent;
+   border: 1px solid #fff; 
+}
+#footer
+{
+  background: #f8f9fd;
+  padding: 20px 10px 2px;
+}
+#footer p
+{
+  color: #f0f;
+  background-image: linear-gradient(to right, #6db9ef, #7ce08a);
+}
+
+form 
+{
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input, input[type=text], input[type=password], input[type=number] 
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add a hover effect for buttons */
+button:hover 
+{
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn, .remove, .cancelEdit
+{
+  width: auto;
+  padding: 7px;
+  color: #fff;
+  background-color: #f44336;
+  border-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: none !important;
+  border: 1px solid #fff; 
+}
+.editHotel
+{
+  width: 65px;
+  padding: 7px;
+  color: #fff;
+  background-color: #00f;
+  border-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: none !important;
+  border: 1px solid #fff; 
+}
+.saveEdit
+{
+  width: 65px;
+  padding: 7px;
+  color: #fff;
+  background-color: #0ff;
+  border-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: none !important;
+  border: 1px solid #fff; 
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer 
+{
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar 
+{
+  width: 20%;
+  border-radius: 25%;
+}
+
+/* Add padding to containers */
+.container 
+{
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw 
+{
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) 
+{
+  span.psw 
+  {
+    display: block;
+    float: none;
+  }
+  .cancelbtn 
+  {
+    width: 100%;
+  }
+}
+ul 
+{
+  padding: 0;
+}
+ul li 
+{
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #6db9ef, #7ce08a);;
+}
+ul li .edit 
+{
+  display: none;
+}
+ul li.edit .edit 
+{
+  display: initial;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 
+{
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}

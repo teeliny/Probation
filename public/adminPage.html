@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Listing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>$().ready(function() {
+        if(document.referrer != 'http://localhost:3000/adminPage.html'){ 
+            history.pushState(null, null, 'http://localhost:3000/adminlog.html');
+            window.addEventListener('popstate', function () {
+                history.pushState(null, null, 'http://localhost:3000/adminlog.html');
+            });
+        }
+    });
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <section id = 'header'>
+        <div class = "menu-bar">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src=./images/logo.jpg></a>
+            <button class=".navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="logout" class="nav-link" href="">Sign Out</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class ="banner text-center">
+            <h1>Admin Functions</h1>
+            <ul class="view-hotel list-centre">
+              <li><a href="adminHome.html">Admin Home Page</a></li>
+              <li><a href="addAdmin.html">Add New Admin</a></li>
+              <li><a href="addhotel.html">Add New Hotels</a></li>
+              <li><a href="adminPage.html">View & Update Available Hotels</a></li>
+            </ul>
+        </div>
+
+    <!---------------Top Hotels------------->
+
+    
+        <h3>AVALIABLE HOTELS IN NIGERIA</h3>
+        <ul id = "hotels"> </ul>
+        
+        <template id="hotel-template"> 
+          <li data-id="{{id}}">
+            <p>
+              <i class="fa fa-font"></i><strong>Name:</strong> 
+              <span class="noedit name">{{name}}</span>
+              <input class="edit name"/>
+            </p>
+            <p>
+              <i class="fa fa-address-card"></i><strong>State:</strong>
+              <span class="noedit state">{{state}}</span>
+              <input class="edit state"/>
+            </p>
+            <p>
+              <i class="fa fa-map-marker"></i><strong>Address:</strong>
+              <span class="noedit address">{{address}}</span>
+              <input class="edit address"/>
+            </p>
+            <p>
+              <i class="fa fa-angle-double-right"></i><strong>Description:</strong>
+              <span class="noedit description">{{description}}</span>
+              <input class="edit description"/>
+            </p>
+            <p>
+              <i class="fa fa-angle-double-right"></i><strong>Rooms:</strong> 
+              <span class="noedit rooms">{{rooms}}</span>
+              <input class="edit rooms"/>
+            </p>
+            <p>
+              <i class="fa fa-angle-double-right"></i><strong>Amount:</strong>
+              <span class="noedit amount">{{amount}}</span>
+              <input class="edit amount"/>
+            </p>
+            <button data-id='{{id}}' class='remove'>Delete</button>
+            <button class='editHotel noedit'>Edit</button>
+            <button class='saveEdit edit'>Save</button>
+            <button class='cancelEdit edit'>Cancel</button>
+            </li>
+        </template>     
+  <div id="footer" class="text-center">
+    <p>(c) 2019 Allied Corporation</p>
+  </div>
+  </body>
+    <script src="./js/admin.js"></script>
+</html>

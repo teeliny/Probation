@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Listing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <section id = 'header'>
+        <div class = "menu-bar">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src=./images/logo.jpg></a>
+            <button class=".navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    <!---------------Sign in form------------->   
+    <h3>Admin Login</h3>
+    <form id="loginAdmin">
+        <div class="imgcontainer">
+          <img src="./images/avatar1.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="adminUser"><b>Username</b></label>
+          <input type="text" id="adminUser" placeholder="Enter Username" name="adminUser" required>
+      
+          <label for="adminPass"><b>Password</b></label>
+          <input type="password" id="adminPass" placeholder="Enter Password" name="psw" required>
+      
+          <button id="signinbtn" class="btn btn-primary" type="submit">Login</button>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+            <a href="./index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+          
+        </div>
+      </form>
+      
+    <!---------------Top Hotels------------->
+
+    
+
+  <div id="footer" class="text-center">
+    <p>(c) 2019 Allied Corporation</p>
+  </div>
+  </body>
+  <script src="./js/accept.js"></script>
+</html>
